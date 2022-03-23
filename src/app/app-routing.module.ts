@@ -4,9 +4,9 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: '**', pathMatch: 'full', component: HomeComponent } //Redirige a Home sino existe la URL
 ];
 
 @NgModule({
