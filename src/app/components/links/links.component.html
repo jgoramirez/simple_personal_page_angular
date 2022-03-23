@@ -1,7 +1,7 @@
 <div class="d-flex items-center justify-content-center">
-  <!-- TODO: Editar correctamente los enlaces -->
   <div class="px-1" *ngFor="let link of links">
-    <a href="{{link.url}}" target="_newBlank">{{link.icon}}
+    <a href="{{link.url}}" target="_newBlank">
+      <i class="bi-{{link.icon}} primary" style="font-size: 1.5rem" role="img" ></i>
     </a>
   </div>
 </div>
